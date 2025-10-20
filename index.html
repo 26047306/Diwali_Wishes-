@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky🪔Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="back.mp3" type="audio/mpeg">
+    </audio>
+
+    <video autoplay loop muted id="bg-video">
+        <source src="diwali1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="card">
+        <h1> 🪔 Happy Diwali! 🪔✨💥</h1>
+        
+        
+        <input type="text" id="nameInput" placeholder="">
+
+        <button id="generateBtn">🎉 Generate Wish 🎉</button>
+
+        <div id="wishMessageContainer" style="display:none;">
+            <p id="wishMessage"></p>
+        </div>
+
+        <div id="shareContainer" style="display:none;">
+            <p>Share this wish with your friends!</p>
+            <a id="whatsappShare" href="#" target="_blank">Share on WhatsApp</a>
+            <button id="copyLinkBtn">Copy Link</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
