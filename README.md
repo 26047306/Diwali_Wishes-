@@ -2,7 +2,7 @@
 
 A **dynamic and immersive web application** for creating and sharing personalized Diwali greetings.  
 This project uses **pure JavaScript** to generate unique, shareable links — all set against a **beautiful video background** with ambient music.
-
+🔗 [Visit Portfolio Website](#) *( https://26047306.github.io/Diwali_Wishes-/)*
 <img width="959" height="441" alt="image" src="https://github.com/user-attachments/assets/e5e98579-fd87-474b-bd89-7ecf707babc6" />
 
 
@@ -38,7 +38,7 @@ Follow these simple steps to set up the project locally.
 
 1. **Clone the repository**  
    ```bash
-   git clone https://your-repository-url.git
+   git clone https://26047306/Diwali_Wishes-.git
    ```
 
 2. **Navigate to the project directory**  
