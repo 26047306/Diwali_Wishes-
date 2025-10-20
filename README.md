@@ -1,62 +1,110 @@
-# Diwali_Wishes-
-🪔 दिवाली विशिंग प्रोजेक्ट 2025 💥
-यह एक सिम्पल और मजेदार इवेंट विशिंग वेबसाइट स्क्रिप्ट है, जो दिवाली के लिए बनाई गई है। यूज़र अपना नाम डालकर एक पर्सनलाइज्ड (personalized) विश जेनेरेट कर सकते हैं, जिसे वे अपने दोस्तों और परिवार के साथ एक यूनिक लिंक के ज़रिये शेयर कर सकते हैं।
+# 🪔 Diwali Greeting & Sharing Platform ✨
 
-जब कोई उस लिंक को खोलता है, तो उसे भेजने वाले के नाम के साथ विश दिखाई देती है, और वह भी अपना नाम डालकर आगे किसी और को शेयर कर सकता है।
+A **dynamic and immersive web application** for creating and sharing personalized Diwali greetings.  
+This project uses **pure JavaScript** to generate unique, shareable links — all set against a **beautiful video background** with ambient music.
 
-✨ मुख्य फीचर्स (Features)
-पर्सनलाइज्ड विश: नाम के साथ कस्टम दिवाली शुभकामना संदेश।
+<img width="959" height="441" alt="image" src="https://github.com/user-attachments/assets/e5e98579-fd87-474b-bd89-7ecf707babc6" />
 
-आसान शेयरिंग: WhatsApp और "Copy Link" बटन के साथ।
 
-डायनामिक URL: शेयर किया गया लिंक URL में नाम को पास करता है।
 
-बैकग्राउंड वीडियो: फुल-स्क्रीन दिवाली-थीम वाला वीडियो बैकग्राउंड।
+## 🚀 Core Features
 
-बैकग्राउंड म्यूज़िक: 🎵 पेज पर पहले क्लिक के साथ बैकग्राउंड म्यूज़िक बजना शुरू हो जाता है।
+- ✨ **Dynamic Greeting:** Generates a custom wish using the user's name.  
+- 🔗 **Persistent Sharing:** Creates a unique URL `(?name=...)` for each generated wish.  
+- 🚀 **Instant Share:** Integrated “Share on WhatsApp” and “Copy Link” functionality.  
+- 🎥 **Immersive UI:** Full-screen, looping video background.  
+- 🎵 **Ambient Music:** Background music automatically plays on the user's first interaction.  
+- 📱 **Fully Responsive:** Clean, mobile-first design that works on all devices.
 
-रिस्पॉन्सिव डिज़ाइन: मोबाइल और डेस्कटॉप दोनों पर बढ़िया काम करता है।
+---
 
-🛠️ टेक्नोलॉजी (Technology Used)
-HTML5: वेबसाइट के स्ट्रक्चर के लिए।
+## 🛠️ Tech Stack
 
-CSS3: स्टाइलिंग और डिज़ाइन के लिए।
+- **Frontend:** HTML5, CSS3  
+- **Core Logic:** JavaScript (ES6+)  
+- **Media:** HTML5 `<video>` and `<audio>` elements
 
-JavaScript (Vanilla JS): नाम जेनेरेट करने, लिंक बनाने और म्यूज़िक प्ले करने के लॉजिक के लिए।
+---
 
-🚀 कैसे इस्तेमाल करें (How to Use)
-इस वेबसाइट को चलाने के लिए आपको 3 मुख्य फ़ाइलों की ज़रूरत है: index.html, style.css, और script.js.
+## 🏁 Getting Started
 
-कोड डाउनलोड करें: इस रिपॉजिटरी को क्लोन करें या सभी फ़ाइलें डाउनलोड करें।
+Follow these simple steps to set up the project locally.
 
-मीडिया फ़ाइलें जोड़ें: इस प्रोजेक्ट को 2 मीडिया फ़ाइलों की ज़रूरत है। उन्हें डाउनलोड करें और अपने index.html वाले फोल्डर में रखें:
+### ✅ Prerequisites
 
-diwali.mp4 (आपका बैकग्राउंड वीडियो)
+- A modern web browser (Chrome, Edge, Firefox, Safari, etc.)
 
-diwali-music.mp3 (आपका बैकग्राउंड म्यूज़िक)
+### 📥 Installation
 
-नाम बदलें (Optional): अगर आपकी वीडियो या म्यूज़िक फ़ाइल का नाम कुछ और है, तो index.html फ़ाइल को खोलें और src को अपडेट करें:
+1. **Clone the repository**  
+   ```bash
+   git clone https://your-repository-url.git
+   ```
 
-HTML
+2. **Navigate to the project directory**  
+   ```bash
+   cd diwali-wishing-project
+   ```
 
-<audio id="bg-music" loop>
-    <source src="your-music-file.mp3" type="audio/mpeg">
-</audio>
+3. **Add Your Media Files**  
+   Place your chosen files in the root of the project folder:
 
-<video autoplay loop muted id="bg-video">
-    <source src="your-video-file.mp4" type="video/mp4">
-</video>
-टेस्ट करें: अपने कंप्यूटर पर index.html फ़ाइल को किसी भी ब्राउज़र में खोलकर टेस्ट करें।
+   - `diwali.mp4` → Your background video  
+   - `diwali-music.mp3` → Your background music
 
-होस्ट करें: वेबसाइट को लाइव करने के लिए, इस पूरे फोल्डर को किसी भी फ्री होस्टिंग सर्विस जैसे GitHub Pages, Netlify, या Vercel पर अपलोड कर दें।
+   *(If your filenames are different, update them in `index.html`)*
 
-📁 फ़ाइल स्ट्रक्चर
+   ```html
+   <audio id="bg-music" loop>
+       <source src="your-music-file.mp3" type="audio/mpeg">
+   </audio>
+
+   <video autoplay loop muted id="bg-video">
+       <source src="your-video-file.mp4" type="video/mp4">
+   </video>
+   ```
+
+4. **Run the Project**  
+   Simply open the `index.html` file in your browser.
+
+---
+
+## 📁 File Structure
+
+```
 diwali-wishing-project/
 │
-├── 📄 index.html
-├── 🎨 style.css
-├── 💡 script.js
-├── 🎥 diwali.mp4       (यह फ़ाइल आपको खुद डालनी होगी)
-├── 🎵 diwali-music.mp3   (यह फ़ाइल आपको खुद डालनी होगी)
-└── 📖 README.md
-Happy Coding and Happy Diwali! 🪔✨
+├── 📄 index.html           # Main HTML structure
+├── 🎨 style.css            # All styles for the application
+├── 💡 script.js            # All JavaScript logic
+│
+├── 🎥 diwali.mp4           # REQUIRED: Your background video
+├── 🎵 diwali-music.mp3     # REQUIRED: Your background audio
+│
+└── 📖 README.md            # Project documentation
+```
+
+---
+
+## 🌍 Deployment
+
+This is a **static website**, so deployment is simple and free.  
+You can host it on platforms like:
+
+- [GitHub Pages](https://pages.github.com/)
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+
+Just upload your entire folder (including `index.html`, `style.css`, `script.js`, and media files).
+
+---
+
+## 📄 License
+
+This project is **open-source** — feel free to use, modify, and share it.  
+Made with ❤️ to spread festive joy.
+
+---
+
+## 🪔 Happy Diwali! ✨
+May this festival of lights brighten your life with joy, success, and endless happiness.
