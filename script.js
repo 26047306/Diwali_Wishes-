@@ -64,7 +64,7 @@ function generateWish(name) {
     const shareUrl = `${baseUrl}?name=${encodeURIComponent(name)}`;
 
     // 3. WhatsApp शेयर लिंक अपडेट करना
-    const whatsappText = `✨ मैंने ${name} के लिए एक खास दिवाली विश भेजी है! ✨\n\nआप भी देखें: \n${shareUrl}`;
+    const whatsappText = `✨ मैंने ${name} के लिए एक खास दिवाली विश भेजी है! ✨\n\n: \n${shareUrl}`;
     const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappText)}`;
     document.getElementById('whatsappShare').href = whatsappLink;
 
@@ -79,4 +79,5 @@ function generateWish(name) {
 
     // 5. शेयर सेक्शन को दिखाना
     document.getElementById('shareContainer').style.display = 'block';
+
 }
